@@ -1,0 +1,13 @@
+Sub RunPython()
+
+Dim objShell As Object
+Dim PythonExe, PythonScript As String
+
+    Set objShell = VBA.CreateObject("Wscript.Shell")
+
+    PythonExe = """C:\Program Files\Python37\python.exe"""
+    PythonScript = "H:\programming\HCP_EDA\vypocet_poctu_hodin_cp.py"
+
+    objShell.Run PythonExe & PythonScript
+
+End Sub
